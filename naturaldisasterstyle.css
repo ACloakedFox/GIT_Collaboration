@@ -1,0 +1,17 @@
+p {
+  color: green;
+}
+
+.listhead {
+  color: blue;
+  font-weight: bold;
+}
+
+.listinfo {
+  font-weight: normal;
+  color: black;
+}
+
+h1 {
+  text-decoration: underline;
+}
