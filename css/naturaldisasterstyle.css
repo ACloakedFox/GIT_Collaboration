@@ -1,0 +1,20 @@
+p {
+  color: green;
+}
+
+.listhead {
+  color: #4B0082;
+  font-weight: bold;
+}
+
+.listinfo {
+  font-weight: normal;
+  color: black;
+}
+
+h1 {
+  text-decoration: underline;
+  font-weight: bold;
+  text-align: center;
+}
+

@@ -1,0 +1,48 @@
+{
+  "name": "git_collaboration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-compile": "sass --load-path=node_modules --style expanded --source-map --embed-sources scss:css",
+    "css-prefix": "postcss --config postcss.config.js --replace \"css/*.css\" \"!css/*.min.css\"",
+    "build": "npm-run-all --sequential css-compile css-prefix",
+    "watch": "nodemon --watch scss/ --ext scss --exec \"npm run build\"",
+    "serve": "sirv --port 8080 --dev .",
+    "start": "npm-run-all build --parallel watch serve",
+    "lint": "stylelint \"scss/**/*.scss\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ACloakedFox/GIT_Collaboration.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ACloakedFox/GIT_Collaboration/issues"
+  },
+  "homepage": "https://github.com/ACloakedFox/GIT_Collaboration#readme",
+  "dependencies": {
+    "@floating-ui/dom": "^1.8.0",
+    "bootstrap": "^5.3.8",
+    "vanilla-calendar-pro": "^3.4.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.6.2",
+    "nodemon": "^3.1.11",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.5.32",
+    "postcss-cli": "^12.0.0",
+    "sass": "^1.107.1",
+    "sirv-cli": "^3.0.1",
+    "stylelint": "^16.26.1",
+    "stylelint-config-twbs-bootstrap": "^16.1.0"
+  },
+  "allowScripts": {
+    "@parcel/watcher@2.6.0": true
+  }
+}
+
