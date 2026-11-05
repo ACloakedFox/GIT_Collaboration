@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How CS is used to reduce natural disaster risks</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/naturaldisasterstyle.css">
+  </head>
+  <body>
+    <div class="container py-4 px-3 mx-auto">
+      <h1>How Computing Reduces The Risks Of Natural Disasters</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Prediction Technology</h2>
+          <p>Where a natural disaster is incredibly hard to prevent, such as in the case of a wildfire, instead of trying to 
+            stop the disaster from ever occuring, we can instead mitigate its risk by using predictive technology. this 
+            technology is used in order to plot the path that the fire is likely to travel, allowing for pre-emptive measures
+            to be taken, stopping the fire from spreading beyond control. These kind of early measures are imperative, ensuring
+            the best possible response to a disaster, and therefore minimizing the amount of damage caused.</p>
+        </div>
+
+        <div class="col">
+          <h2>Warning Systems</h2>
+          <p>Alongside being able to plot information about disasters, computing is an extremely effective tool in providing 
+            information that may warn us of an impending natural disaster that is not immediately obvious. This is helpful 
+            especially in the case of earthquakes and tsunamis, giving people valuable time to get as far away from the 
+            epicentre/coastline, saving lives in the process. While this cannot particularly be used to reduce the damage caused
+            by these disasters, the sheer value of saving human lives is a clear demonstration that computing is crucial in
+            helping mitigate these kinds of disasters.</p>
+          </div>
+      <hr>
+      </div>
+    <div class="row">
+      <h2>Other Natural Disasters Handled By Computing</h2>
+      <div class="col-md-2">
+        <script src="naturaldisasterscripts.js"></script>
+        <button type="button" onclick="disastertype(0)">Tornadoes</button>
+        <hr>
+        <button type="button" onclick="disastertype(1)">Flooding</button>
+        <hr>
+        <button type="button" onclick="disastertype(2)">Hurricanes</button>
+
+      </div>
+      <div class ="col-md-10">
+        <p id="typetext"></p>
+      </div>
+    </div>
+    </div>
+    </div>
+    <script type="module" src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
